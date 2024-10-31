@@ -4,3 +4,6 @@ Notebooks
 data
 *.pdf
 .vscode
+.pytest_cache
+docs
+venv
