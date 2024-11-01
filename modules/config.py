@@ -6,6 +6,7 @@ load_dotenv()
 
 class SentryConst: 
     SENTRY_DNS = os.getenv("SENTRY_DNS")
+    SENTRY_ENV = os.getenv("SENTRY_ENV")
 
 
 class AppDataSourceConst:
