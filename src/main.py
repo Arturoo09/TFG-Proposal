@@ -1,12 +1,8 @@
-import sentry_sdk
-from config import SentryConst, AppDataSourceConst
 import requests
+from modules.config import AppDataSourceConst
+from modules.sentry_module import Sentry
 
-sentry_sdk.init(
-    dsn=SentryConst.SENTRY_DNS,
-    traces_sample_rate=1.0,
-    profiles_sample_rate=1.0,
-)
+sentry = Sentry()
 
 
 data = requests.get("https://data.cityofchicago.org/resource/f7f2-ggz5.json").json()
