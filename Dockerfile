@@ -16,7 +16,6 @@ COPY ./src/ ./src/
 COPY ./scripts/ ./scripts/
 COPY ./data/ ./data/
 COPY ./modules/ ./modules/
-COPY ./dashboard/ ./dashboard/
 
 ENV PYTHONPATH="${PYTHONPATH}:/TFG"
 
