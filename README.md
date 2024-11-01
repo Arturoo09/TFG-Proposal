@@ -31,7 +31,8 @@ El objetivo es desarrollar una solución integral que abarque diversos aspectos 
 > Para extraer correctamente los datos hay que crearse una cuenta en [NYC OpenData](https://opendata.cityofnewyork.us/) y sacarte un **APP_TOKEN**, **APP_SECRET_TOKEN**, **APIKEY_ID**, **APIKEY_SECRET**.
 
 ### **Esquema**
-![image](https://github.com/user-attachments/assets/4683a352-a31e-4217-b740-ef5f83afed6b)
+![image](https://github.com/user-attachments/assets/992fcded-4cc1-42e5-af0d-3feba100c48b)
+
 
 
 ### **Requerimientos del Sistema**
