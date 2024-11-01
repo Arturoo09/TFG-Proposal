@@ -1,21 +1,21 @@
 import sentry_sdk
-from config import SentryConst
+from modules.config import SentryConst
 
 class Sentry:
     def __init__(self) -> None:
-        self.init(SentryConst.SENTRY_DNS, SentryConst.SENTRY_ENV)
+        self.init(SentryConst.SENTRY_DSN, SentryConst.SENTRY_ENV)
     
-    def init(self, dns, env) -> None:
+    def init(self, dsn, env) -> None:
         """Inicializar entorno 
 
         Args:
-            dns (str): url del sentry
+            dsn (str): url del sentry
             env (str): nombre del entorno
         """
-        if not dns and not env:
+        if not dsn and not env:
             return
         
-        sentry_sdk.init(dns=dns, environment=env)
+        sentry_sdk.init(dsn=dsn, environment=env)
         return
     
     def flush(self):

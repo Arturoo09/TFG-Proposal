@@ -1,13 +1,12 @@
 services:
-  mysql:
-    image: mysql:8.0.39-debian
-    environment:
-      MYSQL_ROOT_PASSWORD: admin
-      MYSQL_ROOT_USER: root
-      MYSQL_USER: user
-      MYSQL_PASSWORD: password
-      MYSQL_DATABASE: tfg
-    volumes:
-      - mysql:/var/lib/mysql
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        PYTHON_VERSION: 3.11.4
+    env_file:
+      - path: ./.env
+        required: true
     ports:
-      - 3308:3306
+      - "8000:8000"

@@ -6,17 +6,20 @@ ENV PYTHONUNBUFFERED=1
 
 WORKDIR /TFG
 
+COPY requirements.txt .
+
 RUN pip install --upgrade pip
-RUN --mount=type=cache,target=/root/.cache/pip \
-    --mount=type=bind,source=requirements.txt,target=requirements.txt \
-    python -m pip install -r requirements.txt
+RUN pip install -r requirements.txt
 
 COPY ./app/ ./app/
 COPY ./src/ ./src/
 COPY ./scripts/ ./scripts/
 COPY ./data/ ./data/
+COPY ./modules/ ./modules/
 COPY ./dashboard/ ./dashboard/
+
+ENV PYTHONPATH="${PYTHONPATH}:/TFG"
 
 EXPOSE 8000
 
-CMD uvicorn main:app --reload --host 0.0.0.0 --port 8000 --no-server-header
+CMD ["uvicorn", "app.src.main:app", "--reload", "--host", "0.0.0.0", "--port", "8000", "--no-server-header"]
