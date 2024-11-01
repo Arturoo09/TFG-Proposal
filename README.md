@@ -22,20 +22,41 @@ El objetivo es desarrollar una solución integral que abarque diversos aspectos 
 - **Python** 🐍: Lenguaje de programación principal para el desarrollo de componentes.
 - **PyTest** ✅: Framework para la realización de pruebas unitarias y asegurar la calidad del código.
 - **Git** 🌿: Sistema de control de versiones para el manejo colaborativo del código fuente.
-- **Power BI** 📈: Herramienta para la visualización interactiva y análisis de los datos.
+- **Power BI** 📊: Herramienta para la visualización interactiva y análisis de los datos.
 - **FastAPI** 🚀: Desarrollo de APIs RESTful eficientes y de alto rendimiento.
 
-### **Esquema**
+> [!Note]
+> Este proyecto utiliza la api publica de [NYC OpenData](https://opendata.cityofnewyork.us/).
+> 
+> Para extraer correctamente los datos hay que crearse una cuenta en [NYC OpenData](https://opendata.cityofnewyork.us/) y sacarte un **APP_TOKEN**, **APP_SECRET_TOKEN**, **APIKEY_ID**, **APIKEY_SECRET**.
 
+### **Esquema**
 ![image](https://github.com/user-attachments/assets/4683a352-a31e-4217-b740-ef5f83afed6b)
 
 
-# Requirements
+### **Requerimientos del Sistema**
 
-# Installation
+Para ejecutar este proyecto, necesitas tener instalados los siguientes componentes:
 
-# Execute
+- **Python** 🐍 > 3.11
+- **Docker** 🐳 
+- **Git** 🌿
+- **Power BI** 📊
 
-# Dev - Mode
+> [!Note] 
+> En la **Wiki** del proyecto se proporcionan instrucciones detalladas para instalar correctamente cada una de estas tecnologías. 📘
 
-# Test
+Las demás herramientas y dependencias serán gestionadas automáticamente a través de Docker o instaladas mediante Python.
+
+Para acceder al **Sentry** del proyecto, por favor solicita permiso enviando un correo electrónico a [alargo@alu.ucam.edu](mailto:alargo@alu.ucam.edu). ✉️
+
+
+### **Instalación**
+
+
+
+### **Ejecutar**
+
+### **Dev - Mode**
+
+### **Tests**
