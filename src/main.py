@@ -1,6 +1,6 @@
 import requests
 from modules.config import AppDataSourceConst
-from modules.sentry_module import Sentry
+from modules.sentry import Sentry
 
 sentry = Sentry()
 

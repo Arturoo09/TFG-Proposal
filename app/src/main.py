@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from datetime import datetime
 from app.src.api import router
-from modules.sentry_module import Sentry
+from modules.sentry import Sentry
 
 sentry_module = Sentry()
 
